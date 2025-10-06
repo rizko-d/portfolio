@@ -52,7 +52,7 @@ export default function App() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="text-primary">Cyber</span>
+          <span className="text-primary"></span>
           <span className="text-muted-foreground">Portfolio</span>
         </motion.div>
       </motion.div>
