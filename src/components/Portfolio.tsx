@@ -154,10 +154,18 @@ export default function Portfolio() {
 
                 <CardFooter className="flex gap-2">
                   {project.liveUrl && (
+                    <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
+                    style={{ textDecoration: 'none' }}
+                    >
                     <Button size="sm" className="flex-1 group/btn">
                       <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
                       View Project
                     </Button>
+                    </a>
                   )}
                   {project.githubUrl && (
                     <a
