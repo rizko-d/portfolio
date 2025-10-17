@@ -24,12 +24,12 @@ export default function Portfolio() {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'Enterprise Security Assessment Platform',
-      description: 'Comprehensive cybersecurity assessment tool with automated vulnerability scanning and compliance reporting.',
-      category: 'cybersecurity',
-      image: 'https://images.unsplash.com/photo-1691435828932-911a7801adfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwbmV0d29ya3xlbnwxfHx8fDE3NTk2ODk5OTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Python', 'Django', 'PostgreSQL', 'Nmap', 'OpenVAS'],
-      githubUrl: '#',
+      title: 'Backend API Development with Payment Gateway Integration',
+      description: 'Build Backend APIs for e-commerce businesses using PHP and Laravel. Integrate payment gateways like DOKU, and Authorize.net for secure transactions.',
+      category: 'development',
+      image: 'https://unsplash.com/photos/computer-coding-screengrab-hvSr_CVecVI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8Y29kZXxlbnwwfHx8fDE2OTg0NTY0MDg&force=true&w=1920',
+      technologies: ['PHP', 'Laravel', 'PostgreSQL', 'Railway'],
+      githubUrl: 'https://github.com/rizko-d/ecommerce-api',
       liveUrl: '#',
       featured: true
     }
