@@ -159,7 +159,6 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1"
-                    style={{ textDecoration: 'none' }}
                     >
                     <Button size="sm" className="flex-1 group/btn">
                       <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
@@ -173,7 +172,6 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1"
-                    style={{ textDecoration: 'none' }}
                     >
                     <Button size="sm" variant="outline" className="flex-1 group/btn">
                       <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
