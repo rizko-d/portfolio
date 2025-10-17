@@ -110,7 +110,7 @@ export default function Contact() {
             <Card>
               <CardHeader>
                 <CardTitle>Send Message</CardTitle>
-                <CardDescription>Fill out the form below and I'll get back to you within 24 hours</CardDescription>
+                <CardDescription>Fill out the form below and I'll get back to you within 24 hours (recommendation chat in whatsapp)</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
