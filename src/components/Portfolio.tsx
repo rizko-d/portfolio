@@ -25,12 +25,12 @@ export default function Portfolio() {
     {
       id: '1',
       title: 'Backend API Development with Payment Gateway Integration',
-      description: 'Build Backend APIs for e-commerce businesses using PHP and Laravel. Integrate payment gateways like DOKU, and Authorize.net for secure transactions.',
+      description: 'Build Backend APIs for e-commerce businesses using PHP and Laravel. Integrate payment gateways like DOKU, and Authorize for secure transactions.',
       category: 'development',
       image: 'https://unsplash.com/photos/computer-coding-screengrab-hvSr_CVecVI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8Y29kZXxlbnwwfHx8fDE2OTg0NTY0MDg&force=true&w=1920',
       technologies: ['PHP', 'Laravel', 'PostgreSQL', 'Railway'],
       githubUrl: 'https://github.com/rizko-d/ecommerce-api',
-      liveUrl: '#',
+      liveUrl: 'https://web-production-e35b7.up.railway.app/',
       featured: true
     }
   ];
