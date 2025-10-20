@@ -32,6 +32,17 @@ export default function Portfolio() {
       githubUrl: 'https://github.com/rizko-d/ecommerce-api',
       liveUrl: 'https://web-production-e35b7.up.railway.app/',
       featured: true
+    },
+    {
+      id: '2',
+      title: 'Frontend Development for Learning Management System',
+      description: 'Create responsive and user-friendly frontend interfaces for a Learning Management System (LMS) using React and Tailwind CSS.',
+      category: 'development',
+      image: 'https://i.pinimg.com/736x/fe/d7/9a/fed79a9c659b8c286507b89c9ab1cc60.jpg',
+      technologies: ['React', 'Tailwind CSS', 'TypeScript'],
+      githubUrl: 'https://github.com/rizko-d/lms-online',
+      liveUrl: 'https://lms-online-moofut5dq-rizkos-projects.vercel.app/',
+      featured: true
     }
   ];
 
