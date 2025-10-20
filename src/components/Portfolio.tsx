@@ -53,7 +53,18 @@ export default function Portfolio() {
       technologies: ['Figma'],
       liveUrl: 'https://www.notion.so/rizko/Design-Portfolio-292b7a26286e804f8162cc753e579d79?source=copy_link',
       featured: true
+    },
+    {
+      id: '4',
+      title: 'Wireframe Design for eCommerce Website',
+      description: 'Mid-fidelity wireframe for an artisanal coffee bean online store with all the requested pages and components.',
+      category: 'design',
+      image: 'https://i.pinimg.com/736x/be/e6/66/bee66686815fca6e69200c5eaf8cdd85.jpg',
+      technologies: ['Figma'],
+      liveUrl: 'https://www.notion.so/rizko/eCommerce-Wireframe-292b7a26286e8024846af2267e7e8c99?source=copy_link',
+      featured: true
     }
+
   ];
 
   const categories = [
