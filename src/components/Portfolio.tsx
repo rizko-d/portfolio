@@ -46,10 +46,10 @@ export default function Portfolio() {
     },
     {
       id: '3',
-      title: 'Wireframe Design for COmpany Profile Website',
+      title: 'Wireframe Design for Company Profile Website',
       description: 'Clean wireframe for a company profile page with all the essential sections and features.',
       category: 'design',
-      image: 'blob:https://id.pinterest.com/a3f1caba-288c-4b4b-bf7c-b19b7238e10a',
+      image: 'https://i.pinimg.com/736x/fa/15/87/fa1587f5d4d52d0777ae79ff36c92dfe.jpg',
       technologies: ['Figma'],
       liveUrl: 'https://www.notion.so/rizko/Design-Portfolio-292b7a26286e80fe9277edf955599c62',
       featured: true
