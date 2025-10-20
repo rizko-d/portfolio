@@ -43,6 +43,16 @@ export default function Portfolio() {
       githubUrl: 'https://github.com/rizko-d/lms-online',
       liveUrl: 'https://lms-online-moofut5dq-rizkos-projects.vercel.app/',
       featured: true
+    },
+    {
+      id: '3',
+      title: 'Wireframe Design for COmpany Profile Website',
+      description: 'Clean wireframe for a company profile page with all the essential sections and features.',
+      category: 'design',
+      image: 'blob:https://id.pinterest.com/a3f1caba-288c-4b4b-bf7c-b19b7238e10a',
+      technologies: ['Figma'],
+      liveUrl: 'https://www.notion.so/rizko/Design-Portfolio-292b7a26286e80fe9277edf955599c62',
+      featured: true
     }
   ];
 
