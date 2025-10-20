@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { ExternalLink, Github, Shield, Code, Palette, BarChart3, Filter } from 'lucide-react';
+import { ExternalLink, Github, Shield, Code, Palette, BarChart3, Filter, FileText, Figma } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
@@ -15,6 +15,8 @@ interface Project {
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
+  notionUrl?: string;
+  figmaUrl?: string;
   featured: boolean;
 }
 
@@ -51,7 +53,8 @@ export default function Portfolio() {
       category: 'design',
       image: 'https://i.pinimg.com/736x/fa/15/87/fa1587f5d4d52d0777ae79ff36c92dfe.jpg',
       technologies: ['Figma'],
-      liveUrl: 'https://www.notion.so/rizko/Design-Portfolio-292b7a26286e804f8162cc753e579d79?source=copy_link',
+      notionUrl: 'https://www.notion.so/rizko/Design-Portfolio-292b7a26286e804f8162cc753e579d79?source=copy_link',
+      figmaUrl: 'https://www.figma.com/design/u4eU6mhZS0NELeoLKUIt03/Wireframe-Company-Profile?node-id=0-1&t=y2AlDvTNeyPbbw0N-1',
       featured: true
     },
     {
@@ -61,7 +64,8 @@ export default function Portfolio() {
       category: 'design',
       image: 'https://i.pinimg.com/736x/be/e6/66/bee66686815fca6e69200c5eaf8cdd85.jpg',
       technologies: ['Figma'],
-      liveUrl: 'https://www.notion.so/rizko/eCommerce-Wireframe-292b7a26286e8024846af2267e7e8c99?source=copy_link',
+      notionUrl: 'https://www.notion.so/rizko/eCommerce-Wireframe-292b7a26286e8024846af2267e7e8c99?source=copy_link',
+      figmaUrl: 'https://www.figma.com/design/SSNNjFtvS9nThJ2aVkIDOr/Wireframe-eCommerce?node-id=0-1&t=sF3DYbap8zxUBwHw-1',
       featured: true
     }
 
@@ -185,31 +189,44 @@ export default function Portfolio() {
                 </CardContent>
 
                 <CardFooter className="flex gap-2">
-                  {project.liveUrl && (
-                    <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1"
-                    >
-                    <Button size="sm" className="flex-1 group/btn">
-                      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                      View Project
-                    </Button>
-                    </a>
-                  )}
-                  {project.githubUrl && (
-                    <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1"
-                    >
-                    <Button size="sm" variant="outline" className="flex-1 group/btn">
-                      <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                      Source Code
-                    </Button>
-                    </a>
+                  {project.category === 'design' ? (
+                    <>
+                      {project.notionUrl && (
+                        <Button size="sm" className="flex-1 group/btn" asChild>
+                          <a href={project.notionUrl} target="_blank" rel="noopener noreferrer">
+                            <FileText className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                            View in Notion
+                          </a>
+                        </Button>
+                      )}
+                      {project.figmaUrl && (
+                        <Button size="sm" variant="outline" className="flex-1 group/btn" asChild>
+                          <a href={project.figmaUrl} target="_blank" rel="noopener noreferrer">
+                            <Figma className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                            View in Figma
+                          </a>
+                        </Button>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      {project.liveUrl && (
+                        <Button size="sm" className="flex-1 group/btn" asChild>
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                            View Project
+                          </a>
+                        </Button>
+                      )}
+                      {project.githubUrl && (
+                        <Button size="sm" variant="outline" className="flex-1 group/btn" asChild>
+                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                            Source Code
+                          </a>
+                        </Button>
+                      )}
+                    </>
                   )}
                 </CardFooter>
               </Card>
