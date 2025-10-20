@@ -61,7 +61,7 @@ export default function Portfolio() {
     { id: 'cybersecurity', label: 'Cybersecurity', icon: Shield },
     { id: 'development', label: 'Development', icon: Code },
     { id: 'design', label: 'Design', icon: Palette },
-    { id: 'data', label: 'Data Science', icon: BarChart3 }
+    { id: 'data', label: 'Data', icon: BarChart3 }
   ];
 
   const filteredProjects = selectedCategory === 'all' 
