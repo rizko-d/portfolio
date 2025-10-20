@@ -51,7 +51,7 @@ export default function Portfolio() {
       category: 'design',
       image: 'https://i.pinimg.com/736x/fa/15/87/fa1587f5d4d52d0777ae79ff36c92dfe.jpg',
       technologies: ['Figma'],
-      liveUrl: 'https://www.notion.so/rizko/Design-Portfolio-292b7a26286e80fe9277edf955599c62?source=copy_link',
+      liveUrl: 'https://www.notion.so/rizko/Design-Portfolio-292b7a26286e804f8162cc753e579d79?source=copy_link',
       featured: true
     }
   ];
